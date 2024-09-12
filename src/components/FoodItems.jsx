@@ -4,6 +4,8 @@ import FoodData from '../data/FoodData.js'
 
 const FoodItems = () => {
   return (
+    <>
+    <Toaster position="top-center" reverseOrder={false}/>
     <div className='flex flex-wrap gap-10 justify-center lg:justify-start mx-6 my-10'>
         { 
             FoodData.map((food) => { 
@@ -19,6 +21,7 @@ const FoodItems = () => {
             })
         }
     </div>
+    </>
   )
 }
 
